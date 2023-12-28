@@ -1,0 +1,29 @@
+* {
+    font-family: 'Raleway', sans-serif;
+    box-sizing: border-box;
+    margin: auto;
+}
+
+header {
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+}
+
+.recipe-menu {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-content: space-around;
+    max-width: 1500px;
+}
+
+.recipe-menu .recipe-container img {
+    height: 450px;
+    border-radius: 5px;
+    width: 400px;
+    box-shadow: 5px 5px rgba(255, 225, 255, 0.6);
+    object-fit: cover;
+}
