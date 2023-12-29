@@ -4,6 +4,10 @@
     margin: auto;
 }
 
+html {
+    background-color: rgb(160, 255, 223);
+}
+
 header {
     text-align: center;
 }
@@ -14,16 +18,29 @@ h2 {
 
 .recipe-menu {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     flex-direction: row;
-    align-content: space-around;
-    max-width: 1500px;
+    overflow: auto;
+    gap: 10px 20px;
+    align-content: space-between;
+    max-width: 1000px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 30px auto;
+    box-shadow: 8px 8px rgb(85, 154, 131, 0.3);
 }
 
 .recipe-menu .recipe-container img {
     height: 450px;
-    border-radius: 5px;
+    border-radius: 10px;
     width: 400px;
     box-shadow: 5px 5px rgba(255, 225, 255, 0.6);
     object-fit: cover;
+}
+
+.recipe-container p {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 20px;
 }
