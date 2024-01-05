@@ -15,22 +15,22 @@
 <body>
     <header>
         <h1>La cocina de Juana</h1>
-        <h2>La del patio de mi casa</h2>
+        <h2>La que está en el patio de mi casa</h2>
     </header>
     <main>
-        <section>
+        <section id="main-menu">
             <h2>Menú</h2>
             <div class="recipe-menu">
                 <div class="recipe-container">
-                    <a href="recipes/pastelon.html"><img class="menu-item-pic" src="img/pastelon.jpg"></a>
+                    <a href="recipes/pastelon.html"><img class="menu-item-pic" src="img/pastelon.jpg" alt="A pastelón"></a>
                     <p class="dish-name">Pastelón</p>
                 </div>
                 <div class="recipe-container">
-                    <a href="recipes/rice-and-beans.html"><img class="menu-item-pic" src="img/rice-and-beans.jpg"></a>
+                    <a href="recipes/rice-and-beans.html"><img class="menu-item-pic" src="img/rice-and-beans.jpg" alt="Rice and beans"></a>
                     <p class="dish-name">Arroz y habichuelas</p>
                 </div>
                 <div class="recipe-container">
-                    <a href="recipes/tostones.html"><img class="menu-item-pic" src="img/tostones.jpg"></a>
+                    <a href="recipes/tostones.html"><img class="menu-item-pic" src="img/tostones.jpg" alt="Tostones"></a>
                     <p class="dish-name">Tostones</p>
                 </div>
             </div>
@@ -39,18 +39,32 @@
             <h2>Menú navideño</h2>
             <div class="recipe-menu">
                 <div class="recipe-container">
-                <a href="recipes/pasteles.html"><img class="menu-item-pic" src="img/pasteles.png"></a>
+                <a href="recipes/pasteles.html"><img class="menu-item-pic" src="img/pasteles.png" alt="Pasteles"></a>
                     <p class="dish-name">Pasteles</p>
                 </div>
                 <div class="recipe-container">
-                    <a href="recipes/coquito.html"><img class="menu-item-pic" src="img/coquito.jpg"></a>
+                    <a href="recipes/coquito.html"><img class="menu-item-pic" src="img/coquito.jpg" alt="Coquito"></a>
                     <p class="dish-name">Coquito</p>
                 </div>
                 <div class="recipe-container">
-                    <a href="recipes/pernil.html"><img class="menu-item-pic" src="img/pernil.jpg"></a>
+                    <a href="recipes/pernil.html"><img class="menu-item-pic" src="img/pernil.jpg" alt="Pernil"></a>
                     <p class="dish-name">Pernil</p>
                 </div>
             </div>
+        </section>
+        <section id="recipe-submit-section">
+            <h2>Submit a recipe!</h2>
+            <form>
+                <!-- Use fieldset to group part of HTML form -->
+                <fieldset>
+                    <legend>Tell us about yourself!</legend>
+                    <label for="first-name">First Name: <input id="first-name" type="text" name="first-name" required></label>
+                    <label for="last-name">Last Name: <input id="last-name" type="text" name="last-name" required></label>
+                    <label for="email">Email: <input id="email" type="email" name="email" required></label>
+                </fieldset>
+
+            </form>
+
         </section>
     </main>
     <footer>
