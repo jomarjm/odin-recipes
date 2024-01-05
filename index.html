@@ -53,15 +53,23 @@
             </div>
         </section>
         <section id="recipe-submit-section">
-            <h2>Submit a recipe!</h2>
+            <h2>¡Envíanos tu receta!</h2>
             <form>
                 <!-- Use fieldset to group part of HTML form -->
                 <fieldset>
-                    <legend>Tell us about yourself!</legend>
-                    <label for="first-name">First Name: <input id="first-name" type="text" name="first-name" required></label>
-                    <label for="last-name">Last Name: <input id="last-name" type="text" name="last-name" required></label>
+                    <legend>¿De quién es la receta?</legend>
+                    <label for="first-name">Nombre: <input id="first-name" type="text" name="first-name" required></label>
+                    <label for="last-name">Apellido: <input id="last-name" type="text" name="last-name" required></label>
                     <label for="email">Email: <input id="email" type="email" name="email" required></label>
+                    <label for="city">Pueblo: <input id="city" type="text" name="city" required></label>
                 </fieldset>
+                <fieldset>
+                    <legend>Comparte tu receta</legend>
+                    <label for="ingredients">Ingredientes<textarea id="ingredients" required></textarea></label>
+                    <label for="steps">Pasos<textarea id="steps" required></textarea></label>
+                    <label for="user-recipe-pic">Añade una foto<input id="user-recipe-pic" type="file" accept="jpg png" required></label>
+                </fieldset>
+                <button type="submit">Enviar</button>
 
             </form>
 
